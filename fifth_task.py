@@ -1,7 +1,7 @@
 #5 task
-vip_guests = ("Alice", "Bob", "Charlie", "Dave", "Eve")
-common_guests = ["Frank", "Grace", "empty_place", "Henry", "Ivy", "Jack", "empty_place", "empty_place"]
-print("The guests in the VIP box are:")
+vip_guests = ('Ann', 'Kate', 'Max')
+common_guests = ['Juli', 'Michael', 'John', 'Grace', 'empty_place', 'Henry', 'Ivy', 'Jack', 'empty_place', 'empty_place']
+print('Guests on the VIP seats:')
 print(",".join(vip_guests))
-print("The guests in the common room are:")
+print('Guests on the usual seats:')
 print(",".join(common_guests))
