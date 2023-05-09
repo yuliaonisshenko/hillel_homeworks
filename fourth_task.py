@@ -1,5 +1,7 @@
 #4 task
+people = []
 omnivores = ['Franklin', 'Jeremy', 'Tahlia']
 vegeterians = ['Kylie', 'Lawrence', 'Anna', 'Zaina']
-vegeterians.extend(omnivores)
-print(vegeterians)
+people.extend(omnivores)
+people.extend(vegeterians)
+print(people)
