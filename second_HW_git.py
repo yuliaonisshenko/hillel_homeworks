@@ -28,10 +28,8 @@ print('Result:', num_3)
 friends = ['John', 'Marta', 'James', 'Artur', 'Kate']
 enemies = ['John', 'Johnatan', 'Artur', 'Julia']
 for friend in friends:
-    if friend == 'James':
-        print(f'{friend} is the best friend!')
-    elif friend in enemies:
-        print(f'{friend} we are not friends anymore.')
-    else:
+    if friend != 'James':
         print(f'{friend} we are the best friends.')
+    elif friend in enemies and friend != 'James':
+        print(f'{friend} we are not friends anymore.')
 
