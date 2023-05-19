@@ -38,4 +38,3 @@ new_pattern = r'<div id="(\w+)">\s*<a href="(?:https?://)?(?:www\.)?([\w.-]+)">\
 new_matches = re.findall(new_pattern, html)
 new_result = [(new_match[0], new_match[1], new_match[2]) for new_match in new_matches]
 print(new_result)
-
