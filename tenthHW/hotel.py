@@ -1,13 +1,14 @@
+from pythonProject.tenthHW.mall import Mall
+from pythonProject.tenthHW.hospital import Hospital
 from pythonProject.tenthHW.building import Building
 
 
-class Hotel(Building):
-    def __init__(self, name, height, num_rooms):
-        super().__init__(name, height)
+class Hotel(Mall, Hospital):
+    def __init__(self, name, address, num_rooms, num_shops, num_beds):
+        Building.__init__(self, name, address)
+        Mall.__init__(self, name, address, num_shops)
+        Hospital.__init__(self, name, address, num_beds)
         self.num_rooms = num_rooms
 
-    def book_room(self, room_number):
-        print(f"Booking room {room_number} in {self.name}.")
-
-    def order_room_service(self, room_number, meal):
-        print(f"Ordering {meal} for room {room_number} in {self.name}.")
+    def display_rooms(self):
+        print("Number of rooms: {}".format(self.num_rooms))
