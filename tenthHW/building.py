@@ -1,10 +1,14 @@
-class Building:
+from abc import ABC, abstractmethod
+
+class Building(ABC):
     def __init__(self, name, height):
         self.name = name
         self.height = height
 
+    @abstractmethod
     def construct(self):
-        print(f"The {self.name} is under construction.")
+        pass
 
+    @abstractmethod
     def demolish(self):
-        print(f"The {self.name} is being demolished.")
+        pass
